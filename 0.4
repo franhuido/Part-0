@@ -1,0 +1,10 @@
+sequenceDiagram
+    Browser->>+Server: Request URL:https://studies.cs.helsinki.fi/exampleapp/new_note
+    Server-->>-Browser: HTTP status code 302
+     Note right of Browser: This is a URL Redirect
+   Browser->>+Server: Request URL:https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server-->>-Browser: The css file
+    Browser->>+Server: Request URL:https:https://studies.cs.helsinki.fi/exampleapp/main.js
+    Server-->>-Browser: The java script
+    Browser->>+Server: Request URL:https:https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server-->>-Browser: The data.json
