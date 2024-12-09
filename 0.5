@@ -1,0 +1,4 @@
+sequenceDiagram
+    Browser->>+Server: Request URL:https://studies.cs.helsinki.fi/exampleapp/new_note_
+    Server-->>-Browser: status code 201 created
+     Note right of Browser: No URL redirect this time, instead uses the JavaScript code it fetched from the server
